@@ -11,7 +11,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "incremental": true,
     "plugins": [{ "name": "next" }],
     "paths": {
@@ -28,5 +28,5 @@
     ".next/dev/types/**/*.ts",
     "types/**/*.d.ts"
   ],
-  "exclude": ["node_modules", "contracts", "test", "scripts"]
+  "exclude": ["node_modules", "contracts", "test", "scripts", "web", "hardhat.config.ts"]
 }
