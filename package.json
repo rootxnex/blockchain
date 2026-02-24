@@ -1,26 +1,32 @@
 {
   "name": "onchain-doc-proof",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "preinstall": "npm install --prefix web",
-    "dev": "cd web && npm run dev",
-    "build": "cd web && npm run build",
-    "start": "cd web && npm run start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "ethers": "^6.16.0",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.4.0"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^6.1.0",
     "@types/chai": "^4.3.20",
-    "@types/node": "^25.2.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
     "dotenv": "^17.3.1",
-    "ethers": "^6.16.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
     "hardhat": "^2.28.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5"
   }
 }
